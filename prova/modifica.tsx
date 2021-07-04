@@ -3,7 +3,4 @@ const saluto = () => {
     return "ciaone, come stai?" + risposta;
 };
 
-//nuevo comentario
-
-
-// hi, I'm a new comment
+// new comment
