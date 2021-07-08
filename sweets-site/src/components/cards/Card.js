@@ -1,9 +1,9 @@
 import React from "react";
 import "./card.css";
 import { ButtonComponent } from "../buttons/button.js";
+import mainLogo from '../../img/torta.jpeg';
 
-export const CardComponent = ({like = 0}) => {
-
+export const CardComponent = ({ like = 0 }) => {
   const doLike = () => {
     alert("like");
   };
@@ -14,7 +14,7 @@ export const CardComponent = ({like = 0}) => {
   return (
     <div className="card">
       <div className="card-figlio1">
-        <img src="../../img/torta.svg" alt="immagine" />
+      <img style={{width: "301px", height: "120px"}} src={mainLogo}  alt="fireSpot"/>
       </div>
 
       <div className="card-figlio2">
