@@ -1,9 +1,13 @@
-import {ButtonComponent} from "./components/buttons/button";
-import './App.css';
+
+import { HomeComponent } from "./page/home/home";
+import "./App.css";
 
 function App() {
   return (
-    <div><ButtonComponent/></div>
+    <div>
+     
+      <HomeComponent/>
+    </div>
   );
 }
 
