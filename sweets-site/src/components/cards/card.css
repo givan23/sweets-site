@@ -1,45 +1,46 @@
 .card {
-    background-color: hsl(0, 0%, 99%);
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+  background-color: hsl(0, 0%, 99%);
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 .card-figlio1 {
-    background-color: #cf2608;
-    width: 300px;
-    height: 60%;
-    border-radius: 10px 10px 0 0 
+  background-color: #cf2608;
+  width: 300px;
+  height: 60%;
+  border-radius: 10px 10px 0 0;
 }
 
 .card-figlio2 {
-    display: flex;
-    flex-direction: row;
-    background-color: #f1e20e;
-    width: 300px;
-    height: 20%;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #f1e20e;
+  width: 300px;
+  height: 20%;
+  align-items: center;
 }
-.immagine{
-    background-color: #0e38f1;
-    width: 20%;
-    height: 100%;
+.immagine {
+  background-color: #0e38f1;
+  width: 20%;
+  height: 100%;
 }
-.paragrafo{
-    margin-left: 6px;
-    font-size: 16px;
-    font-weight: 600;
+.paragrafo {
+  margin-left: 6px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .card-figlio3 {
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    height: 20%;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 20%;
 }
-.ButtonComponent{
-    background-color: #0e38f1;
-    width: 50%;
-    height: 100%;
+.ButtonComponent {
+  background-color: #0e38f1;
+  width: 50%;
+  height: 100%;
 }
