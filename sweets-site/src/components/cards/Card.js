@@ -1,22 +1,24 @@
 import React from "react";
 import "./card.css";
 import { ButtonComponent } from "../buttons/button.js";
-import mainLogo from '../../img/torta.jpeg';
+import mainLogo from "../../img/torta.jpeg";
 
-export const CardComponent = ({ like = 0, commenti = ""}) => {
-  const likeLabel = "like"
-  const commentLabel = "comment"
-  const doLike = () => {
-    alert("like");
-  };
-  const doDelete = () => {
-    alert("cancel");
-  };
+export const CardComponent = ({ like = 0, commenti = "", doLike, doComment }) => {
 
+  // consts
+  const likeLabel = "like";
+  const commentLabel = "comment";
+
+
+// HTML --> JSX
   return (
     <div className="card">
       <div className="card-figlio1">
-      <img style={{width: "301px", height: "120px"}} src={mainLogo}  alt="fireSpot"/>
+        <img
+          style={{ width: "301px", height: "120px" }}
+          src={mainLogo}
+          alt="fireSpot"
+        />
       </div>
 
       <div className="card-figlio2">
@@ -34,16 +36,16 @@ export const CardComponent = ({ like = 0, commenti = ""}) => {
         </svg>
 
         <p className="paragrafo">{like}</p>
-        <br/>
+        <br />
         <h3>{commenti}</h3>
       </div>
 
       <div className="card-figlio3">
         <span onClick={doLike}>
-          <ButtonComponent label = {likeLabel} />
+          <ButtonComponent label={likeLabel} />
         </span>
-        <span onClick={doDelete}>
-          <ButtonComponent label = {commentLabel}/>
+        <span onClick={doComment}>
+          <ButtonComponent label={commentLabel} />
         </span>
       </div>
     </div>

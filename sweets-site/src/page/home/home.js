@@ -5,11 +5,21 @@ import { CardComponent } from "../../components/cards/Card";
 
 export const HomeComponent = () => {
   const cardList = [{ like: 10 }, { like: 50 }, { like: 25 }, { like: 80 }];
-const Comment = "Mi piace questa torta"
+  const comment = "Mi piace questa torta";
+
+  // functions
+  const doLike = (e) => {
+    console.log("ciao sono l'evento", e);
+    alert("like");
+  };
+  const doComment = () => {
+    alert("comment");
+  };
+
   return (
     <div className="container">
       {cardList.map((card) => {
-        return <CardComponent like={card?.like} commenti ={Comment} />;
+        return <CardComponent like={card?.like} commenti={comment} doLike={doLike} doComment={doComment} />;
       })}
     </div>
   );
