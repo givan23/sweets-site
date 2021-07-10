@@ -3,7 +3,9 @@ import "./card.css";
 import { ButtonComponent } from "../buttons/button.js";
 import mainLogo from '../../img/torta.jpeg';
 
-export const CardComponent = ({ like = 0 }) => {
+export const CardComponent = ({ like = 0, commenti = ""}) => {
+  const likeLabel = "like"
+  const commentLabel = "comment"
   const doLike = () => {
     alert("like");
   };
@@ -32,14 +34,16 @@ export const CardComponent = ({ like = 0 }) => {
         </svg>
 
         <p className="paragrafo">{like}</p>
+        <br/>
+        <h3>{commenti}</h3>
       </div>
 
       <div className="card-figlio3">
         <span onClick={doLike}>
-          <ButtonComponent />
+          <ButtonComponent label = {likeLabel} />
         </span>
         <span onClick={doDelete}>
-          <ButtonComponent />
+          <ButtonComponent label = {commentLabel}/>
         </span>
       </div>
     </div>
