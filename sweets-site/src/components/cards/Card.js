@@ -67,3 +67,5 @@ export const CardComponent = ({ like = 0, commenti = "", doLike }) => {
     </div>
   );
 };
+
+/* ivan eres antipatico */
