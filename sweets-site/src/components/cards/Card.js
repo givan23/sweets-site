@@ -69,3 +69,4 @@ export const CardComponent = ({ like = 0, commenti = "", doLike }) => {
 };
 
 /* ivan eres antipatico */
+/* ivan  */
