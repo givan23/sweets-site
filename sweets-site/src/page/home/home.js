@@ -19,7 +19,7 @@ export const HomeComponent = () => {
   return (
     <div className="container">
       {cardList.map((card) => {
-        return <CardComponent like={card?.like} commenti={comment} doLike={doLike} doComment={doComment} />;
+        return <CardComponent like={card?.like} commenti={comment} doLike={doLike}  />;
       })}
     </div>
   );
