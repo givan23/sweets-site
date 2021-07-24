@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./card.css";
 import { ButtonComponent } from "../buttons/button.js";
 import mainLogo from "../../img/torta.jpeg";
 
-export const CardComponent = ({ like = 0, commenti = "", doLike, doComment }) => {
+export const CardComponent = ({ like = 0, commenti = "", doLike }) => {
+
+
+  const [openComment, setOpenComment] = useState(false);
+
+  const doComment = () => {
+    setOpenComment(!openComment);
+  };
 
   // consts
   const likeLabel = "like";
@@ -48,6 +55,15 @@ export const CardComponent = ({ like = 0, commenti = "", doLike, doComment }) =>
           <ButtonComponent label={commentLabel} />
         </span>
       </div>
+      {
+        openComment ? 
+        <div style={{width:"100%", height:"300px", backgroundColor:"lightblue"}}>
+        writing...
+        </div>
+        : null
+      }
+      
+
     </div>
   );
 };
